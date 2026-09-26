@@ -58,6 +58,7 @@
 .btn-primary:hover {
     background: #81d4fa;
 }
+
 .btn-primary {
     background: linear-gradient(135deg, #ff6f61, #ffca28, #4fc3f7);
     background-size: 300% 300%;
@@ -89,4 +90,43 @@
 .btn-primary:hover {
     transform: scale(1.12) rotate(1deg);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.project {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.project-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.project-text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.learn-more {
+    color: #4fc3f7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
 }
