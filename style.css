@@ -1,31 +1,92 @@
-h1 {color:#20c997;
-    front-weight:bold;
-    front-family: "Playfair Display", serif;
-}
-
-p {color:#6610f2;
-    front-weight:normal;
-    front-family:"Poppins", sans-serif;
-
-}
- .hero{ background-color:#6610f2;
- text-align:center;
- padding:160px 0;}
-
- 
-.hero p {front-size:96px;
-front-family: "Playfair Display", serif;}
-
-.hero h2 {front-family: "Poppins", sans-serif;
-front-weight: normal;
-font-size:36px;
-}
-
-btn-branding{ background-color: #20c997;
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
     color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.wave {
+    font-size: 3rem;
+    display: inline-block;
+    animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.highlight {
+    color: #4fc3f7;
+}
+
+.hero-text {
+    margin: 20px 0 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background: #4fc3f7;
+    color: #000;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #81d4fa;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #ff6f61, #ffca28, #4fc3f7);
+    background-size: 300% 300%;
+    color: #000;
+    padding: 14px 32px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.4s ease;
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    animation: rainbowMove 6s ease infinite;
+}
+
+@keyframes rainbowMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-primary:hover {
+    transform: scale(1.12) rotate(1deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
