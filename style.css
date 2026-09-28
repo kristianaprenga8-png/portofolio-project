@@ -134,3 +134,46 @@
     text-decoration: none;
     font-weight: bold;
 }
+/* SECOND PAGE HERO */
+.hero-secondary {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    color: #fff;
+}
+
+.hero-secondary .hero-content {
+    max-width: 500px;
+}
+
+.hero-secondary .hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+.hero-secondary .hero-image img:hover {
+    transform: scale(1.1);
+}
+
+.hero-secondary h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hero-secondary h2 {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.hero-secondary .hero-text {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
