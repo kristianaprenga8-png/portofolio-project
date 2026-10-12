@@ -344,24 +344,41 @@ body {
 }
 
 .contact-box {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    padding: 18px 28px;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 720px;
+    margin: 0 auto 24px;
+    padding: 22px 26px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.02);
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(79, 195, 247, 0.05));
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-kicker {
+    margin: 0 0 6px;
+    color: #4fc3f7;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .contact-box h4 {
-    margin: 0 0 6px;
-    font-size: 1.2rem;
+    margin: 0;
+    font-size: 1.4rem;
 }
 
-.contact-box p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.72);
+.footer-button {
+    white-space: nowrap;
+    padding: 12px 22px;
+    font-size: 0.95rem;
 }
 
 .footer-label {
@@ -431,6 +448,13 @@ body {
     margin: 18px 0 0;
     color: rgba(255, 255, 255, 0.55);
     font-size: 0.9rem;
+}
+
+.footer-attribution {
+    margin: 12px 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
 }
 
 @media (max-width: 700px) {
